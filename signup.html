@@ -20,6 +20,7 @@
 
     <!-- Custom styles for this template -->
     <link href="css/grayscale.min.css" rel="stylesheet">
+    <link href="css/login.css" rel="stylesheet">
 
 </head>
 
@@ -30,52 +31,58 @@
         <div class="container">
             <a class="navbar-brand js-scroll-trigger" href="index.html">Keja Smart</a>
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        Menu
-        <i class="fas fa-bars"></i>
-      </button>
+                Menu
+                <i class="fas fa-bars"></i>
+            </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="about.html">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="login.html">Login/Create Account</a>
 
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#signup">Contact</a>
+                    </li>
                 </ul>
             </div>
         </div>
     </nav>
-
     <!-- Header -->
     <header class="masthead">
         <div class="container d-flex h-100 align-items-center">
-            <div class="mx-auto text-center">
-                <h1 class="mx-auto my-0 text-uppercase">KEJA SMART</h1>
-                <h2 class="text-white-50 mx-auto mt-2 mb-5">Come Rain come Shine, let us help you put a roof over your head.
-                </h2>
-                <a href="houses.html" class="btn btn-primary js-scroll-trigger">Get Started</a>
+            <div class="login-container">
+                <form action="" class="form-login">
+                    <ul class="login-nav">
+                        <li class="login-nav__item ">
+                            <a href="login.html">Sign In</a>
+                        </li>
+                        <li class="login-nav__item active">
+                            <a href="#">Sign Up</a>
+                        </li>
+                    </ul>
+                    <label for="login-input-user" class="login__label">
+                        Email
+                    </label>
+                    <input id="login-input-user" class="login__input" type="text" />
+                    <label for="login-input-password" class="login__label">
+                        Password
+                    </label>
+                    <input id="login-input-password" class="login__input" type="password" />
+                    <label for="login-input-password" class="login__label">
+                        Confirm Password
+                    </label>
+                    <input id="login-input-password" class="login__input" type="password" />
+                    <label for="login-sign-up" class="login__label--checkbox">
+
+                        <input id="login-sign-up" type="checkbox" class="login__input--checkbox" />
+                        Keep me Signed in
+                    </label>
+                    <button class="login__submit" disabled>Sign in</button>
+                </form>
+                <a href="#" class="login__forgot">Forgot Password?</a>
             </div>
+
         </div>
     </header>
-    <section class="contact-section bg-black">
-        <div class="container">
 
 
-
-            <div class="social d-flex justify-content-center">
-                <a href="#" class="mx-2">
-                    <i class="fab fa-twitter"></i>
-                </a>
-                <a href="#" class="mx-2">
-                    <i class="fab fa-facebook-f"></i>
-                </a>
-                <a href="#" class="mx-2">
-                    <i class="fab fa-github"></i>
-                </a>
-            </div>
-
-        </div>
-    </section>
 
 
     <!-- Footer -->
@@ -94,7 +101,6 @@
 
     <!-- Custom scripts for this template -->
     <script src="js/grayscale.min.js"></script>
-
 </body>
 
 </html>
