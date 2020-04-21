@@ -10,6 +10,12 @@ body {
     transition: .25s all ease;
 }
 
+body {
+    font-family: Nunito;
+    letter-spacing: .0625em;
+    background-color: rgba(0, 0, 0, 0.914);
+}
+
 .login-container {
     display: block;
     position: relative;
@@ -182,4 +188,14 @@ body {
 
 .login__forgot:hover {
     color: rgb(17, 97, 237);
+}
+
+footer {
+    padding: 5rem 0;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    height: 20px;
+    background: #222;
+    color: white;
 }
