@@ -1,3 +1,12 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
 body {
     background-color: #e9e9e9;
     font-size: 16px;
@@ -188,14 +197,4 @@ body {
 
 .login__forgot:hover {
     color: rgb(17, 97, 237);
-}
-
-footer {
-    padding: 5rem 0;
-    width: 100%;
-    bottom: 0;
-    left: 0;
-    height: 20px;
-    background: #222;
-    color: white;
 }
