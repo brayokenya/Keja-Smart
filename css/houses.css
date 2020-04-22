@@ -1,6 +1,5 @@
 #section-1 {
   padding-top: 80px;
-  background-image: url("../img/house6.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -22,4 +21,8 @@
   75% {
     background-image: url("../img/house7.jpg");
   }
+}
+#section-1 .text {
+  display: inline;
+  font-family: "Pacifico", cursive;
 }
