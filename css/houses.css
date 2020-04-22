@@ -26,3 +26,36 @@
   display: inline;
   font-family: "Pacifico", cursive;
 }
+.btn {
+  width: 200px;
+  height: 60px;
+  background: none;
+  border: 4px solid;
+  color: white;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-size: 16px;
+}
+.btn::before,
+.btn::after {
+  content: "";
+  position: absolute;
+  width: 14px;
+  height: 4px;
+  background: red;
+  transform: skewX(50deg);
+  transition: 0.4s linear;
+}
+.btn::before {
+  top: 190px;
+}
+.btn::after {
+  top: 246px;
+}
+.btn:hover::before {
+  left: 80%;
+}
+.btn:hover::after {
+  right: 80%;
+}
