@@ -48,7 +48,7 @@
     <header class="masthead">
         <div class="container d-flex h-100 align-items-center">
             <div class="login-container">
-                <form action="" class="form-login">
+                <form action="login.html" class="form-login">
                     <ul class="login-nav">
                         <li class="login-nav__item ">
                             <a href="login.html">Sign In</a>
@@ -60,22 +60,23 @@
                     <label for="login-input-user" class="login__label">
                         Email
                     </label>
-                    <input id="login-input-user" class="login__input" type="text" />
+                    <input type="email" id="name" class="login__input" placeholder="Email" required>
                     <label for="login-input-password" class="login__label">
                         Password
                     </label>
-                    <input id="login-input-password" class="login__input" type="password" />
-                    <label for="login-input-password" class="login__label">
-                        Confirm Password
-                    </label>
-                    <input id="login-input-password" class="login__input" type="password" />
-                    <label for="login-sign-up" class="login__label--checkbox">
+                    <input type="password" id="pw" class="login__input" placeholder="Password" required>
+                    <ul class="helper-text">
+                        <li class="length">Must be at least 8 characters long.</li>
+                        <li class="lowercase">Must contain a lowercase letter.</li>
+                        <li class="uppercase">Must contain an uppercase letter.</li>
+                        <li class="special">Must contain a number or special character.</li>
+                    </ul>
 
-                        <input id="login-sign-up" type="checkbox" class="login__input--checkbox" />
-                        Keep me Signed in
-                    </label>
-                    <button class="login__submit" disabled>Sign in</button>
+
+                    <input class="login__submit" id="rgstr_btn" type="submit" value="Sign Up" onclick="store()">
                 </form>
+
+
                 <a href="#" class="login__forgot">Forgot Password?</a>
             </div>
 
@@ -101,6 +102,8 @@
 
     <!-- Custom scripts for this template -->
     <script src="js/grayscale.min.js"></script>
+    <script src="js/script.js"></script>
+
 </body>
 
 </html>

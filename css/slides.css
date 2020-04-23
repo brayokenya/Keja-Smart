@@ -1,0 +1,20 @@
+.mySlides {
+  display: none;
+}
+
+h2 {
+  font-family: "Bubblegum Sans", cursive;
+
+p {
+  font-family: 'Pompiere', cursive;
+}
+
+#description p {
+  width: 10%;
+  padding: 2px 50px;
+  text-align: right;
+}
+
+#description {
+  display: none;
+}
