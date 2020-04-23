@@ -1,0 +1,33 @@
+.content{
+    margin-top: 50px;
+}
+
+.image{
+    border: 10px;
+}
+  
+
+h1, h2, .Details{
+    color: white;
+    text-align: center;
+}
+
+
+
+.row{
+    display: inline-flex;
+    margin: 10px;
+}
+
+
+
+h2{
+    color: brown;
+
+}
+
+.image{
+   
+   
+}
+
