@@ -22,7 +22,7 @@ To make advancements/modifications, follow these steps:
 
 ## Setup/Use requirements
 
-- Visit the website at https://brayokenya.github.io/La-Pizza-Cafe/
+- Visit the website at https://brayokenya.github.io/Keja-Smart/
 - Click on the What We Do icons to view a short description of the services we offer
 - Reach out to us by filling the form in the page
 
