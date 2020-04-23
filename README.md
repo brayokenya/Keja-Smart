@@ -23,8 +23,10 @@ To make advancements/modifications, follow these steps:
 ## Setup/Use requirements
 
 - Visit the website at https://brayokenya.github.io/Keja-Smart/
-- Click on the What We Do icons to view a short description of the services we offer
-- Reach out to us by filling the form in the page
+- Register an Account and Login
+- Select desired house
+- Proceed to Payment
+
 
 ## Technologies Used
 
