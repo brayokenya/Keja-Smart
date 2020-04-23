@@ -1,0 +1,67 @@
+* {
+    box-sizing: border-box;
+}
+
+​ body {
+    padding: 0;
+    margin: 0;
+    font-family: "Lato", sans-serif;
+}
+
+​ img {
+    margin: 0 auto;
+}
+
+​ div.part {
+    width: 300px;
+    float: left;
+    text-align: center;
+    padding: 1%;
+    margin: 1%;
+}
+
+​ footer {
+    clear: both;
+}
+
+​ .footer {
+    background-color: white;
+}
+
+​ div.ga {
+    width: 300px;
+    float: left;
+    margin: 1%;
+}
+
+​ a img {
+    width: 100%;
+}
+
+​ div {
+    padding: 1%;
+}
+
+​ .container img {
+    float: left;
+    margin: 1%;
+    width: 300px;
+}
+
+​ p {
+    font-size: larger;
+}
+
+​ h1 {
+    text-align: center;
+    font: normal 35px Cookie, Arial, Helvetica, sans-serif;
+}
+
+​ h2.text-center {
+    font: normal 38px Cookie, Arial, Helvetica, sans-serif;
+}
+
+​ form.bootstrap-form-with-validation {
+    width: 80%;
+    margin: 0 auto;
+}

@@ -39,8 +39,8 @@ function check() {
     var storedName = localStorage.getItem('name');
     var storedPw = localStorage.getItem('pw');
 
-    var userName = document.getElementById('userName');
-    var userPw = document.getElementById('userPw');
+    var userName = document.getElementById('name');
+    var userPw = document.getElementById('pw');
     var userRemember = document.getElementById("rememberMe");
 
     if (userName.value == storedName && userPw.value == storedPw) {
