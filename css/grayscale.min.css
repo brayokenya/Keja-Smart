@@ -269,7 +269,8 @@
 
 body {
     font-family: Nunito;
-    letter-spacing: .0625em
+    letter-spacing: .0625em;
+    background-color: rgba(0, 0, 0, 0.914);
 }
 
 a {
@@ -295,5 +296,14 @@ a:hover {
 }
 
 footer {
-    padding: 5rem 0
+    padding: 5rem 0;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    height: 20px;
+    background: #222;
+    color: white;
+}
+
+
 }
