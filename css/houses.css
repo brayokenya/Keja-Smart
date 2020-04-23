@@ -1,28 +1,13 @@
-.content{
-    margin-top: 50px;
+.col-md-12 img {
+    padding-top: 100px;
+    padding-left: 200px;
 }
 
-.image{
-    border: 10px;
-}
-  
-
-h1, h2, .Details{
+h5, a{
     color: white;
     text-align: center;
 }
 
-
-
-.row{
-    display: inline-flex;
-    margin: 10px;
-}
-
-.Details p{
-    display:none
-}
-
-h2{
-    color: brown;
+.Details{
+    padding-top: 20px;
 }
