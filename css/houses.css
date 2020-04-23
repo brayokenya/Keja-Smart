@@ -59,3 +59,25 @@
 .btn:hover::after {
   right: 80%;
 }
+.inner img {
+  height: 30vh;
+}
+.my-cards {
+  padding-top: 15vh;
+}
+#custom {
+  color: greenyellow;
+  background-color: black;
+}
+#custom1 {
+  background-color: green;
+  color: white;
+}
+#custom2 {
+  background-color: lightskyblue;
+  color: white;
+}
+#custom3 {
+  background-color: maroon;
+  color: white;
+}
