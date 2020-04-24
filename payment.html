@@ -51,39 +51,61 @@
 
 
 
-                <h2> Keja Smart Payment Gateway</h2>
-                <div class="form">
-                    <div class="card space icon-relative">
-                        <label class="label">Card holder:</label>
-                        <input type="text" class="input" placeholder="Coding Market">
-                        <i class="fas fa-user"></i>
-                    </div>
-                    <div class="card space icon-relative">
-                        <label class="label">Card number:</label>
-                        <input type="text" class="input" data-mask="0000 0000 0000 0000" placeholder="Card Number">
-                        <i class="far fa-credit-card"></i>
-                    </div>
-                    <div class="card-grp space">
-                        <div class="card-item icon-relative">
-                            <label class="label">Expiry date:</label>
-                            <input type="text" name="expiry-data" class="input" data-mask="00 / 00" placeholder="00 / 00">
-                            <i class="far fa-calendar-alt"></i>
-                        </div>
-                        <div class="card-item icon-relative">
-                            <label class="lable" class="label">Mpesa Paybill</label> <select class="input" name="Mpesa Paybill" id="mpesa">
-                                <option value="">-----</option>
-                                <option value="">-----</option>
-                                <option value="">111111</option>
-                            </select>
-                        </div>
-                    </div>
+                <div id="ordersection">
+                    <h3><b>Keja Smart Payment Gateway</b></h3>
+                    <h5>Kindly fill the form below</h5>
+                    <div class="row">
+                        <div class="col-md-3"></div>
+                        <div class="col-md-6">
+                            <div class="jumbotron">
+                                <form id="orders">
+                                    <div class="form-group">
+                                        <label for="name">Full Name:</label>
+                                        <input type="text" class="form-control" id="name" placeholder="Name..." pattern="[a-zA-Z ]+" required>
+                                    </div>
 
-                    <div class="btn">
-                        Pay
-                    </div>
+                                    <div class="form-group">
+                                        <label for="town">Town</label>
+                                        <select class="form-control" id="town" required>
+                                            <option>Nairobi</option>
+                                            <option>Nakuru</option>
+                                            
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="nairobi">Nairobi</label>
+                                        <select class="form-control" id="naiobi" required>
+                                            <option>None</option>
+                                            <option>Rongai</option>
+                                            <option>Kilimani</option>
+                                            <option>Karen</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="nakuru">Nakuru</label>
+                                        <select class="form-control" id="nakuru" required>
+                                            <option>None</option>
+                                            <option>Bahati</option>
+                                            <option>Kuresoi South</option>
+                                            <option>Subukia</option>                                            
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="pm">Payment Method</label>
+                                        <small id="payment method" class="form-text text-muted">Lipa Na Mpesa</small>
+                                        <small class="form-text text-muted"><b>Paybill number:</b>1234567 </small>
+                                    </div>
 
+                                    <button type="submit" name="submitButton" class="btn submit" id="placeorder">PAY</button>
+                                    <a href="houses.html" class="btn btn-primary js-scroll-trigger">CHECKOUT</a>
+                                </form>
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
             </div>
+        </div>
         </div>
     </header>
 
@@ -100,7 +122,7 @@
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
+    <script src="js/payment.js"></script>
     <!-- Plugin JavaScript -->
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
