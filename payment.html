@@ -22,7 +22,7 @@
     <!-- Custom styles for this template -->
     <link href="css/grayscale.min.css" rel="stylesheet">
     <link href="css/login.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/payment.css">
+    <link rel="stylesheet" href="css/rent.css">
 </head>
 
 <body id="page-top">
@@ -55,81 +55,140 @@
                 <div id="ordersection">
                     <h3><b>Keja Smart Payment Gateway</b></h3>
                     <h5>Kindly fill the form below</h5>
-                    <div class="row">
-                        <div class="col-md-3"></div>
-                        <div class="col-md-6">
-                            <div class="jumbotron">
-                                <form id="orders">
-                                    <div class="form-group">
-                                        <label for="name">Full Name:</label>
-                                        <input type="text" class="form-control" id="name" placeholder="Name..." pattern="[a-zA-Z ]+" required>
-                                    </div>
+                    <div id="order"></div>
+                    <div class="order mt-4">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div id="order-section"></div>
+                                    <h1 class="text-center pt-4"> Make an order</h1>
 
-                                    <div class="form-group">
-                                        <label for="town">Town</label>
-                                        <select class="form-control" id="town" required>
-                                            <option>Nairobi</option>
-                                            <option>Nakuru</option>
-                                            
-                                        </select>
+                                    <div class="alert alert-success mt-2" id="success">
+                                        <strong>Success!</strong> the landlord will call you via
+                                        <span style="color: red; font-size:18px" id="place"></span> Thank you for letting us put a roof over your head 😄 .
                                     </div>
-                                    <div class="form-group">
-                                        <label for="nairobi">Nairobi</label>
-                                        <select class="form-control" id="naiobi" required>
-                                            <option>None</option>
-                                            <option>Rongai</option>
-                                            <option>Kilimani</option>
-                                            <option>Karen</option>
-                                        </select>
+                                    <div class="alert alert-success" id="no-delivery">
+                                        <strong>Success!</strong> We will be waiting for your call via 0722 000 000. Directions will be sent to you via SMS.
                                     </div>
-                                    <div class="form-group">
-                                        <label for="nakuru">Nakuru</label>
-                                        <select class="form-control" id="nakuru" required>
-                                            <option>None</option>
-                                            <option>Bahati</option>
-                                            <option>Kuresoi South</option>
-                                            <option>Subukia</option>                                            
-                                        </select>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="pm">Payment Method</label>
-                                        <small id="payment method" class="form-text text-muted">Lipa Na Mpesa</small>
-                                        <small class="form-text text-muted"><b>Paybill number:</b>1234567 </small>
-                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="card">
+                                                <card-title>
+                                                    <h3 class="pt-4 pl-5">Select your preference</h3>
+                                                </card-title>
+                                                <div class="card-body">
+                                                    <div id="pizza">
+                                                        <img class="pl-5" src="./assets/pizza1.jpeg" alt="" />
+                                                    </div>
+                                                    <form id="myform">
+                                                        <div class="form-group">
+                                                            <label for="pizza-size">House</label>
+                                                            <select class="form-control" id="pizza-size">
+                                                                <option value="small">2 bedroom -- ksh 57000</option>
+                                                                <option value="medium"> 3 bedroom -- ksh 29000</option>
+                                                                <option value="large"> Bedsitter -- ksh 12000</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="form-group">
 
-                                    <button type="submit" name="submitButton" class="btn submit" id="placeorder">PAY</button>
-                                    <a href="houses.html" class="btn btn-primary js-scroll-trigger">CHECKOUT</a>
-                                </form>
+                                                        </div>
+
+                                                        <div class="toppings">
+
+                                                        </div>
+                                                        <button type="submit" class="btn-success btn mt-3" id="orderbtn">
+                                                            Order now
+                                                        </button>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="card mt-1">
+                                                <div class="card-title d-inline-flex">
+                                                    <h3 class="p-4"> Rented Apartment</h3>
+                                                    <i class="p-4 fa fa-shopping-cart total"><button
+                                                            class="btn-success btn ml-2" value="0" id="quantity">
+                                                            0
+                                                        </button></i>
+                                                </div>
+                                                <div class="card-body">
+                                                    <table id="table">
+
+                                                    </table>
+
+                                                    <div id="cart">
+                                                        <img id="cart" src="img/shopping cart.png" alt="" />
+                                                        <p class="text-center pt-4">
+                                                            You do not have any item in the cart
+                                                        </p>
+                                                    </div>
+
+                                                    <div id="items"></div>
+                                                    <a href="#order-section">
+                                                        <div class="checkout">
+                                                            <button class="btn-success btn m-4" data-toggle="modal" data-target="#exampleModalCenter" id="gettotal">
+                                                                Checkout
+                                                            </button>
+                                                        </div>
+                                                    </a>
+                                                    <!-- </a> -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-
                     </div>
-                </div>
-            </div>
-        </div>
-        </div>
-    </header>
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h3 class="modal-title" id="exampleModalLongTitle">
+                                        Confirm the price
+                                    </h3>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>
+                                        Amount you are to pay for your house rent is ksh
+                                        <span id="money" style="color: red"></span>
+                                    </p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" id="myModel" data-dismiss="modal">
+                                        Confirm checkout
+                                    </button>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div><br><br>
 
 
 
 
-    <!-- Footer -->
-    <footer class="bg-black small text-center text-white-50">
-        <div class="container">
-            Copyright &copy; Keja Smart 2020
-        </div>
-    </footer>
+                    <!-- Footer -->
+                    <footer class="bg-black small text-center text-white-50">
+                        <div class="container">
+                            Copyright &copy; Keja Smart 2020
+                        </div>
+                    </footer>
 
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="js/payment.js"></script>
-    <!-- Plugin JavaScript -->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+                    <!-- Bootstrap core JavaScript -->
+                    <script src="vendor/jquery/jquery.min.js"></script>
+                    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+                    <script src="js/payment.js"></script>
+                    <!-- Plugin JavaScript -->
+                    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
-    <!-- Custom scripts for this template -->
-    <script src="js/grayscale.min.js"></script>
-    <script src="js/script.js"></script>
+                    <!-- Custom scripts for this template -->
+                    <script src="js/grayscale.min.js"></script>
+                    <script src="js/rent.js"></script>
 
 </body>
 

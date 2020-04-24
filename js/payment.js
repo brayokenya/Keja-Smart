@@ -23,7 +23,7 @@ function placeOrder() { //function for placing an order
         }
 
     }
-    var nakCost; //set prices for different crust types
+    var nakCost;
     if (nakuru === "none") {
         nakCost = 0;
     } else if (nakuru === "Kuresoi south") {
