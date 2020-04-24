@@ -48,7 +48,7 @@
     <header class="masthead">
         <div class="container d-flex h-100 align-items-center">
             <div class="login-container">
-                <form action="" class="form-login">
+                <form action="houses.html" class="form-login">
                     <ul class="login-nav">
                         <li class="login-nav__item active">
                             <a href="#">Sign In</a>
@@ -57,20 +57,22 @@
                             <a href="signup.html">Sign Up</a>
                         </li>
                     </ul>
+
                     <label for="login-input-user" class="login__label">
-                        Username
+                        Email
                     </label>
-                    <input id="login-input-user" class="login__input" type="text" />
+                    <input type="email" class="login__input" id="userName" placeholder="Email" required>
                     <label for="login-input-password" class="login__label">
                         Password
                     </label>
-                    <input id="login-input-password" class="login__input" type="password" />
-                    <label for="login-sign-up" class="login__label--checkbox">
+                    <input type="password" class="login__input" id="userPw" placeholder="Password" required>
+                    <div id="remember">
+                        <input type="checkbox" value="lsRememberMe" id="rememberMe" style="display: inline-block;">
+                        <label>Remember me</label>
+                    </div>
 
-                        <input id="login-sign-up" type="checkbox" class="login__input--checkbox" />
-                        Keep me Signed in
-                    </label>
-                    <button class="login__submit" disabled>Sign in</button>
+                    <input id="login_btn" class="login__submit" type="submit" value="Sign in" onclick="check()">
+
                 </form>
                 <a href="#" class="login__forgot">Forgot Password?</a>
             </div>
@@ -97,6 +99,7 @@
 
     <!-- Custom scripts for this template -->
     <script src="js/grayscale.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
