@@ -36,9 +36,11 @@ This project is written in HTML5, CSS, Bootstrap, jQuery and JavaScript.
 
 Should you be unable to access my web application, have any recommendations or questions, feel free to email me; kiirubrian21@gmail.com.
 
-## To-do
-
-
+## Group Members
+Timothy Maina
+Benson Ayaya
+Gallgallo Tadicha
+Ted Mwangi
 
 ## [License](https://github.com/brayokenya/Keja-Smart/blob/master/LICENSE)
 
